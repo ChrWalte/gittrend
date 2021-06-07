@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row repo-card" *ngFor="let repo of gitTrendingRepos">
+    <div class="col">
+      <h1>
+        <a [href]="repo.url">{{ repo.name }}</a>
+      </h1>
+      <h2>{{ repo.description }}</h2>
+      <h4 style="color: {{ repo.langColor }};">
+        <div class="row">
+          <div class="col">
+            {{ repo.language }}
+          </div>
+          <div class="col">
+            <fa-icon [icon]="faStar"></fa-icon>
+            {{ repo.stars }}
+          </div>
+          <div class="col">
+            <fa-icon [icon]="faCodeBranch"></fa-icon>
+            {{ repo.forks }}
+          </div>
+        </div>
+      </h4>
+
+      <h5>{{ repo.author }}</h5>
+    </div>
+  </div>
+</div>
