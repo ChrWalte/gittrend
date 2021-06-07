@@ -6,3 +6,8 @@ $white: hsla(0, 0%, 86%, 1);
   margin: 1rem;
   border: 1px $white solid;
 }
+
+.container {
+  background-color: $black;
+  color: $white;
+}

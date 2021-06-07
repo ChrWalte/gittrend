@@ -6,19 +6,19 @@
       </h1>
       <h2>{{ repo.description }}</h2>
       <h4 style="color: {{ repo.langColor }};">
-        <div class="row">
-          <div class="col">
+        <span class="row">
+          <span class="col">
             {{ repo.language }}
-          </div>
-          <div class="col">
+          </span>
+          <span class="col">
             <fa-icon [icon]="faStar"></fa-icon>
             {{ repo.stars }}
-          </div>
-          <div class="col">
+          </span>
+          <span class="col">
             <fa-icon [icon]="faCodeBranch"></fa-icon>
             {{ repo.forks }}
-          </div>
-        </div>
+          </span>
+        </span>
       </h4>
 
       <h5>{{ repo.author }}</h5>

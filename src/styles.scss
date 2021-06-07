@@ -1,0 +1,8 @@
+$black: hsla(0, 0%, 8%, 1);
+$white: hsla(0, 0%, 86%, 1);
+
+html,
+body {
+  background-color: $black;
+  color: $white;
+}
