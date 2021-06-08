@@ -5,7 +5,7 @@ FROM node:alpine3.10 AS build
 WORKDIR /source
 
 # Copy the required package information to install dependencies
-COPY package.json package-lock.json ./
+COPY package.json ./
 
 # Install dependencies
 RUN npm install

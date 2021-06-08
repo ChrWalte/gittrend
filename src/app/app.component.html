@@ -7,14 +7,14 @@
       <h2>{{ repo.description }}</h2>
       <h4 style="color: {{ repo.langColor }};">
         <span class="row">
-          <span class="col">
+          <span class="col group">
             {{ repo.language }}
           </span>
-          <span class="col">
+          <span class="col group">
             <fa-icon [icon]="faStar"></fa-icon>
             {{ repo.stars }}
           </span>
-          <span class="col">
+          <span class="col group">
             <fa-icon [icon]="faCodeBranch"></fa-icon>
             {{ repo.forks }}
           </span>
